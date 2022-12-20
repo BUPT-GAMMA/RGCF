@@ -1,0 +1,22 @@
+Metadata-Version: 2.1
+Name: graphgym
+Version: 0.1
+Summary: GraphGym package
+Home-page: UNKNOWN
+Author: Jiaxuan You, Rex Ying
+Author-email: jiaxuan@cs.stanford.edu, rexy@cs.stanford.edu
+License: UNKNOWN
+Platform: UNKNOWN
+Classifier: Programming Language :: Python :: 3
+Classifier: License :: OSI Approved :: MIT License
+Classifier: Operating System :: OS Independent
+Requires-Python: >=3.6
+Description-Content-Type: text/markdown
+License-File: LICENSE
+
+# Design-Space-for-GNN-based-CF
+Source code for WSDM 2022 paper "Profiling the Design Space for Graph Neural Networks based Collaborative Filtering". 
+
+It's implemented based on [GraphGym](https://github.com/yousof96/GraphGym).
+
+

@@ -1,0 +1,52 @@
+dataset:
+  edge_negative_sampling_ratio: 0.0
+  encoder_dim: 256
+  format: PyG
+  load_type: pointwise
+  name: yelp2020
+  node_encoder: true
+  node_encoder_name: one-hot
+  split:
+  - 0.8
+  - 0.1
+  - 0.1
+  task: link_pred
+  task_type: ranking
+  transductive: true
+device: auto
+gnn:
+  act: identity
+  batchnorm: true
+  component_aggr: mean
+  component_num: 1
+  dim_inner: 64
+  dropout: 0.0
+  l2norm: false
+  layer_type: sageconv
+  layers_mp: 4
+  layers_post_mp: 2
+  layers_pre_mp: 0
+  msg: identity
+  stage_type: sum
+metric_best: recall
+model:
+  edge_decoding: summation
+  eval_type: ranking
+  loss_fun: ccl
+  loss_type: ranking
+  type: mcgnn
+optim:
+  base_lr: 0.001
+  max_epoch: 50
+  optimizer: adam
+  weight_decay: 1e-5
+out_dir: results/cf_grid_cf
+skip_existing_exp: false
+topk: 20
+train:
+  batch_size: 4096
+  ckpt_clean: false
+  ckpt_period: 20
+  eval_period: 1
+  negative_sample_k: 50
+  negative_sample_method: similar
