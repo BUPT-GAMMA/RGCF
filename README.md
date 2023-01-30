@@ -1,4 +1,4 @@
-Here is the source code  for RGCF.
+Here is the source code  for the submission paper "A Neural Retrieval Approach of Graph Neural Networks for Collaborative Filtering ".  Thank you for your interest in our work!
 
 First we will construct meta-train database for both tasks.
 
